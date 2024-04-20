@@ -1,0 +1,46 @@
+@charset"utf-8";
+@media (max-width:850px){
+    .layout{
+        flex-direction: column;
+    }
+    .bangou{
+        text-align: center;
+        flex-flow: column;      
+    }
+    .point-container>img{
+        margin:0 10px 10px;
+    }
+    #fade img{
+        width: 100vw;
+    }
+    aside{
+        text-align: center;
+        text-align: center;
+        margin: 50px auto;
+    }
+    aside>a{
+        padding: 12.5px 30px;
+    }
+}
+
+
+
+@media (min-width:851px){
+    
+  #fade img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  main{
+    width: 100vw;
+  }  
+
+    aside{
+        width: 200px; 
+    }
+    footer{
+        margin-top: 50px;
+        width: 100%;
+    }
+}

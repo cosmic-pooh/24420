@@ -1,0 +1,265 @@
+@charset"utf-8";
+body,a,p,h1,h2,input,textarea{
+    font-family: 'Kiwi Maru',sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+  }
+p{
+    font-size: 20px;
+}
+ul{
+    padding: 10px;
+}
+
+a:hover{
+    color: red;
+    text-decoration: none;
+}
+.layout{
+    display: flex;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    color: #fff;
+    font-size: 30px;
+    padding: 30px 0 -50px 20px;
+}
+nav{
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 0;
+    
+}
+nav>ul{
+    list-style-type: none;
+}
+nav>li,a{
+    text-decoration: none;
+}
+.container {
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1000px;
+}
+
+/*------------- パンクズリスト------------- */
+.bread{
+    font-size: 20px;
+    text-align: left;
+    border-top: #0067C0 2px solid;
+    margin-top: -6px;
+}
+.bread a{
+    color:  #0067C0;
+}
+.bread a:hover{
+    color: red;
+}
+.bread li{
+    display: inline;
+}
+.bread li::after{
+    content: ">";
+    margin:0 3px 0 9px;
+}
+.bread li:last-child::after{
+    content: none;
+}
+/*------------- //main// ------------- */
+main{
+    flex: 1;
+    text-align: center;
+}
+
+#fade{
+    margin: 0;
+    padding: 0;
+}
+.midasi{
+    color: #0067C0;
+}
+.osusumelist{
+    margin: -20px 0 5px;
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 35px;
+    text-decoration: underline 3px red;
+    text-underline-offset: 5px;
+
+}
+.tyui{
+    color:#0067C0;
+    font-size: 20px;
+    text-align: end;
+    /* margin:-5px 10px 0 0; */
+}
+.face{
+    padding: 0;
+}
+.school{
+    margin: 25px 70px 30px;
+    border: #0067C0 3px solid;
+}
+
+.school>li{
+    font-size: 23px;
+    list-style-type: none;
+}
+
+.qrick{
+    font-size: 20px;
+    color: black;
+}
+/* .qrick:hover{
+    color: red;
+    text-decoration: underline 2px;
+    text-underline-offset: 2px;color
+} */
+
+.student-coment{
+    border: #0067C0 3px solid;
+    text-align: center;
+    display: flex;
+    margin: 0px 30px 30px;
+    justify-content: space-around;
+}
+.face,.coment{
+    display: block;
+}
+.face>img{
+    margin:20px 0px 0 10px;
+}
+.coment{
+    font-size: 19px;
+    padding: 8px 20px;
+    margin-left: 2px;
+}
+/* ------------------osusume.html------------------ */
+.osusume-container{
+    text-align: center;
+    padding: 5px ;
+}
+.osusume-container>h1{
+    font-size: 30px;
+    padding-bottom: 5px;
+    text-decoration: underline 5px #0067C0;
+    text-underline-offset: 7px;
+}
+.osusume-container>p{
+    font-size: 20px;
+}
+/* ------------------otoiawase.html------------------ */
+
+.koumoku>p{
+    padding-left: 0.5em;
+}
+input{
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    margin-top: -60px;
+    padding: 7px 80px 7px 10px;
+}
+textarea{
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    border: none;
+    padding: 7px 8px 7px 10px;
+}
+
+.input{
+    padding: 5px 80px 30px 10px;
+}
+.span{
+    margin-left: 15px;
+    color: white;
+    background-color: red;
+
+    padding:0px 4px ;
+    font-size: 15px;
+}
+/* button */
+.telegram {
+    margin:40px auto;
+    transition: none 0.5s ease;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 160px;
+    height: 50px;
+    gap: 10px;
+    border: none;
+    background-color: #0067C0;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .telegram-text {
+    font-family: "Kiwi Maru", sans-serif;
+    transition: none 0.1s ease;
+    font-size: 20px;
+  }
+  
+  .telegram:hover .telegram-text {
+    display: none;
+    position: absolute;
+  }
+  
+  .telegram-svg {
+    margin-left: 10px;
+    width: 23px;
+    height: 23px;
+    transition: .6s;
+  }
+  .telegram:hover .telegram-svg {
+    margin: 55px;
+    display: block;
+    transform: rotate(50deg);
+  }
+
+/* ------------------footer------------------ */
+footer{
+    background-color: #fff;
+}
+.footer-container{
+    text-align: center;
+    color: #0067C0;
+    font-size: 20px;
+    border-top: #0067C0 2px solid;
+}
+.addres{
+    letter-spacing: 1px;
+    margin: 15px 0 9px;
+    line-height: 22px;
+}
+.bangou{
+    letter-spacing: 1px;
+    border-top: #0067C0 2px solid;
+    border-bottom: #0067C0 2px solid;
+    color: #0067C0;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.rights{
+    font-size: 15px;
+    margin: 8px auto 0;
+    padding-bottom: 10px;
+}
